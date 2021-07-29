@@ -218,10 +218,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>c :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
+map <leader>ca :bufdo bd<cr>
 
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
@@ -261,10 +261,10 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " => Status line
 """"""""""""""""""""""""""""""
 " Always show the status line
-set laststatus=2
+" set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
